@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OYE-SAMRAT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/eyeicon.png">
+    <!-- bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEaXc/Grz9Ehf6e7zkfO5QmL5efFMi"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-mQ93gykAmeOcsH8nMZ8+03eJ4jqP6b+qHhfnxOB5rV1z57DX9EurP2PpF5B2dwe6"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONTAWESOMR LINK  -->
+    <script
+      src="https://kit.fontawesome.com/45d59146bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav
+          id="navi"
+          class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        >
+          <img src="./images/logo2.png" alt="logo" class="logo" />
+          <div class="nav_menu" id="myNavMenu">
+            <ul>
+              <li><a href="#header ">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-ban ibar" onclick="closemenu()"></i>
+            </ul>
+          </div>
+          <!-- FOR DARK AND LIGHT MODE  -->
+          <img src="./images/moon.png" alt="dark" id="iconbtn" />
+          <i class="fa-solid fa-bars-staggered ibar" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h3>Hello, It's <span style="color: #ff4321">Me</span></h3>
+          <h1>Samrat Thapa</h1>
+          <h3>And I'm a <span class="typedText">Designer</span></h3>
+          <p>
+            <span style="font-weight: 600"> 𝔼𝕟𝕘𝕚𝕟𝕖𝕖𝕣𝕤</span>
+            solve problems; 𝕕𝕖𝕤𝕚𝕘𝕟𝕖𝕣𝕤 shape experiences!!!
+          </p>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=100031032592657&mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fa-brands fa-facebook fb"></i
+          ></a>
+          <a href="https://github.com/Samrat0294" target="_blank"
+            ><i class="fa-brands fa-github gt"></i
+          ></a>
+          <a href="https://www.youtube.com/@samratthapa2043" target="_blank"
+            ><i class="fa-brands fa-youtube yt"></i
+          ></a>
+
+          <a href="https://www.instagram.com/oye_samrat_/" target="_blank"
+            ><i class="fa-brands fa-instagram ins"></i
+          ></a>
+          <a
+            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsamrat-thapa-58115722a%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3d577JruyziQsooUM0ui2dxXRWRm1bS03j_HZbXFXTmx-JSKG7lY0WKw4_aem_qA48Hisd7umJzPJBYzUytw&h=AT2Z0d4VYhgZVpCm9GXvQSouI1qnZ6AGJ209DnA5atY2EeDHNfiVgGu4_sXCaN4zGqpI06XrqLgKQDpIw2cfOdATHohZMDU-AYv9KoaO_SthssUdAedu_OWBB4Xz5w"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin link"></i
+          ></a>
+        </div>
+        <div class="Topbtn">
+          <a href="./newCV.pdf" download class="btn btn2"
+            >Download CV <i class="fa-solid fa-file-arrow-down"></i
+          ></a>
+
+          <a
+            href="#contact"
+            style="text-decoration: none"
+            class="btn btn2 btnchat"
+            >Chat on me <i class="fa-brands fa-rocketchat"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT SECTION  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="aboutImg">
+              <img src="./images/img1.png" alt="404e" />
+            </div>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">
+              About <span style="color: #ff4321">Me</span>
+            </h1>
+            <p>
+             I'm a Web Developer/Designer and Computer Engineering student passionate about transforming ideas into impactful digital experiences. With a strong foundation in software development, basic Python knowledge, and a growing interest in data analytics and machine learning, I enjoy exploring new technologies and pushing creative boundaries. Highly motivated and detail-oriented, I aim to turn complex problems into innovative solutions—let’s build something amazing together!
+              <i class="fa-regular fa-handshake"></i>
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span> PhotoShop Edit</span> <br />Editing Photo/Video</li>
+                <li><span>Web Development</span> <br />Desiging Web/App interfaces</li>
+                <li><span>Basic Python</span> <br />Exploring Python libraries </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2020-2022</span> <br />Editing traning</li>
+                <li><span>2022-2023</span> <br />Web design traning center</li>
+                <li><span>2023-2025</span> <br />Traning python libraries</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019</span> <br />PhotoShop Editing traning center
+                </li>
+                <li><span>2021</span> <br />HTML,CSS,JS traning</li>
+                <li><span>2022</span> <br />NUMPY,PANDAS,MATPLOTLIB,SEABORN traning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES  -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">
+          MY <span style="color: #ff4321">Services</span>
+        </h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-codepen"></i>
+            <h2>Web Design</h2>
+            <p>
+              "Explore my web design portfolio, showcasing innovative projects
+              that elevate user experiences."
+            </p>
+            <a href="#portfolio">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-camera-retro"></i>
+            <h2>PhotoShop Design</h2>
+            <p>
+              "Elevate your visuals with our professional Photoshop services for
+              stunning results."
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-chart-line"></i>
+            <h2>Data Analysis</h2>
+            <p>
+              "Excited to apply and grow my skills with Python data analysis libraries—each project is a step closer to mastering data-driven insights!"
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO  -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">
+          MY Latest <span style="color: #ff4321"> Project</span>
+        </h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/latest23.png" alt="img" />
+            <div class="layer">
+              <h3>PORTFOLIO <i class="fa-solid fa-person"></i></h3>
+              <p>
+                "Designed and developed an interactive, user-friendly portfolio
+                website showcasing personal projects and experience, using
+                modern web technologies."
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/IOT.webp" alt="img" />
+            <div class="layer">
+              <h3>
+                IOT-Weather Forescasting System
+                <i class="fa-solid fa-cloud-bolt"></i>
+              </h3>
+              <p>
+                "Developed an IoT-based weather forecasting system that utilizes
+                sensor data and real-time analytics to monitor environmental
+                conditions and provide accurate forecasts for local ecosystems."
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/music.avif" alt="img" />
+            <div class="layer">
+              <h3>Music App <i class="fas fa-play	"></i></h3>
+              <p>
+                "Created a music application using C# that enables users to
+                stream, organize, and play their favorite tracks with a
+                user-friendly interface and advanced playback features."
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/data.jpg" alt="img" />
+            <div class="layer">
+              <h3>Data analysis<i class="fa fa-list-alt" aria-hidden="true"></i></h3>
+              <p>
+                "Data analysis uncovers patterns, trends, and relationships within data analyzing data helps identify problems, opportunities, and strategies."
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- Contact FORM  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">
+              Contact <span style="color: #ff4321"> Me</span>
+            </h1>
+            <p>
+              <a
+                href="mailto:samratthpa294@gmail.com"
+                style="text-decoration: none; color: #fff"
+                ><i class="fa-solid fa-paper-plane"></i>
+                Samratthapa294@gmail.com
+              </a>
+            </p>
+            <a
+              href="tel:+9779867330294"
+              style="text-decoration: none; color: #fff"
+              ><p><i class="fa-solid fa-phone-volume"></i>+977-9867330294</p></a
+            >
+
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100031032592657&mibextid=ZbWKwL"
+                target="_blank"
+                ><i class="fa-brands fa-facebook fb"></i
+              ></a>
+              <a href="https://github.com/Samrat0294" target="_blank"
+                ><i class="fa-brands fa-github gt"></i
+              ></a>
+              <a href="https://www.instagram.com/oye_samrat_/" target="_blank"
+                ><i class="fa-brands fa-instagram ins"></i
+              ></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsamrat-thapa-58115722a%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3d577JruyziQsooUM0ui2dxXRWRm1bS03j_HZbXFXTmx-JSKG7lY0WKw4_aem_qA48Hisd7umJzPJBYzUytw&h=AT2Z0d4VYhgZVpCm9GXvQSouI1qnZ6AGJ209DnA5atY2EeDHNfiVgGu4_sXCaN4zGqpI06XrqLgKQDpIw2cfOdATHohZMDU-AYv9KoaO_SthssUdAedu_OWBB4Xz5w"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin link"></i
+              ></a>
+            </div>
+            <a href="./SAMRAT-THAPA-cv-1.pdf" download class="btn btn2"
+              >Download CV <i class="fa-solid fa-file-arrow-down"></i
+            ></a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2 btn3">
+                Send me <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright <i class="fa-regular fa-copyright"></i> 2024 All Rights
+        Reserved || Made by <i class="fa-regular fa-heart i2"></i> OYE.THAPA
+      </p>
+    </div>
+    <!-- typing change javascript  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- scroll reveal js link  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main javascript  -->
+    <script src="main.js"></script>
+  </body>
+</html>
